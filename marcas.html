@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marcas - EsportesPro</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    header {
+      background-color: #111;
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-img {
+      width: 40px;
+      margin-right: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .active {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+      color: #333;
+    }
+
+    .brand-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 30px;
+    }
+
+    .brand {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .brand:hover {
+      transform: scale(1.05);
+    }
+
+    .brand img {
+      max-width: 80px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .brand p {
+      margin: 0;
+      font-weight: bold;
+      color: #444;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #222;
+      color: white;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="../pagina inicial site/imagens/pro-sport-logo-png_seeklogo-112341.png" alt="Logo" class="logo-img">
+      <h1>EsportesPro</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicial</a></li>
+        <li><a href="conta.html">Conta</a></li>
+        <li><a href="marcas.html" class="active">Marcas</a></li>
+        <li><a href="roupas.html">Roupas</a></li>
+        <li><a href="chuteiras.html">Chuteiras</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Nossas Marcas</h2>
+    <div class="brand-grid">
+      <div class="brand">
+        <img src="imagens/marcas/nike.png" alt="Nike">
+        <p>Nike</p>
+      </div>
+      <div class="brand">
+        <img src="imagens/marcas/adidas.png" alt="Adidas">
+        <p>Adidas</p>
+      </div>
+      <div class="brand">
+        <img src="imagens/marcas/puma.png" alt="Puma">
+        <p>Puma</p>
+      </div>
+      <div class="brand">
+        <img src="imagens/marcas/reebok.png" alt="Reebok">
+        <p>Reebok</p>
+      </div>
+      <div class="brand">
+        <img src="imagens/marcas/underarmour.png" alt="Under Armour">
+        <p>Under Armour</p>
+      </div>
+      <div class="brand">
+        <img src="imagens/marcas/newbalance.png" alt="New Balance">
+        <p>New Balance</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    Pro Sport<br>Todos os direitos reservados<br>&copy; Vila Sésamo
+  </footer>
+</body>
+</html>
